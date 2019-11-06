@@ -1,0 +1,30 @@
+<!-- <div *ngFor="let i of arr">
+<b><p>{{i.Lab}}</p></b>
+<p>{{i.Date}}</p>
+<p>{{i.Address}}</p>
+<hr>
+</div> -->
+<div class="body" *ngFor="let i of arr">
+    <div class="container">    
+       <div class="jumbotron">
+           <div class="row">
+            <div class="col-md-9 col-xs-12 col-sm-6 col-lg-9 " >
+                 <div class="" >
+                   <!-- <h2>Your Appointment is Confirmend.Thanks for Scheduling!</h2> -->
+                 </div>
+                   <!-- <hr> -->
+                 <div class="col-md-8">  
+                 <ul class=" details">
+                  <!-- <li> <h6>What</h6></li> -->
+                   <li>{{i.Lab}}<br>
+                   <!-- <li> <h6>When</h6></li> -->
+                   {{i.Date}}<br>
+                   <!-- <li> <h6>Where</h6></li> -->
+                   {{i.Address}}</li>
+                   <hr>
+                   </ul>
+                 </div>
+               </div>
+           </div>
+           </div>
+          

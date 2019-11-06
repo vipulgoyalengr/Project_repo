@@ -1,0 +1,14 @@
+<div *ngFor="let i of arr">
+    Lab Name:{{i.Lab_name}}
+    Date:{{i.Date}}
+    <div *ngIf="i.style1=='none' else even;">
+            <button (click)="rep(i)">See Reports</button>
+    </div>
+    <ng-template #even>
+        <button (click)="rep(i)">Hide Reports</button>
+    </ng-template>
+    <div [style.display]="i.style1"> 
+        <img [src]="upload" style="width: 600px ;height:500px;">
+    </div>
+    </div>
+    

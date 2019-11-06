@@ -1,0 +1,76 @@
+<!-- <div *ngFor="let j of arr2">
+    <div>
+Name:{{j.Firstname}} {{j.Lastname}}
+     <span id="c1">Age:{{j.Age}} Gender:{{j.Gender}}</span>
+<p>{{j.Email}}</p>
+
+<p>{{j.Fathername}}</p>
+<p>{{j.Address}}
+{{j.Contact}}</p>
+</div>
+</div> -->
+<!-- <br>
+<div class="column" *ngFor=" let j of arr2">
+            
+        <div class="card"> -->
+          <!-- <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> -->
+          <!-- <div class="container">
+            <h2>{{j.Firstname}} {{j.Lastname}}</h2>
+            <p ><b>Age</b>:{{j.Age}}</p> -->
+            <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+            <!-- <p><b>Gender</b>:{{j.Gender}} </p>
+            <p><b>Email</b>:{{j.Email}}</p>
+            <p><b>Fathername</b>:{{j.Fathername}}</p>
+<p><b>Contact</b>:{{j.Contact}}</p>
+<p><b>Address</b>:{{j.Address}}</p>
+<button (click)="report(j)"> Report user</button>
+<div [style.display]="j.style1">
+  <select  class="form-control" id="sel1" name="state" [(ngModel)]="cmp">
+<option>Its inappropriate</option>
+<option>Its a spam</option>
+  </select>
+</div>
+            <div *ngIf="flag==0"> -->
+                <!-- <div id="my"  [style.display]="style1"> 
+                    <div class="form-group">
+                       <label >Select Appointment date</label>
+                       <input type="date" class="form-control" id="app"  name="app " [(ngModel)]="app1">
+                     <label>Upload Prescription</label>
+                     <input type="image" class="form-control" id="app1"  name="app1" [(ngModel)]="app1"><button>Upload pic</button>
+                     </div>
+                   </div> -->
+            <!-- </div> -->
+          <!-- </div>
+        </div>
+      </div> -->
+      <div class="body">
+        <div class="container">
+          <div class="panel panel-default">
+            <div class="panel-heading"> 
+             <div class="panel-body">
+               <div class="box box-info" *ngFor=" let j of arr2">
+                
+                <div class="col-sm-6">
+                      <h4 style="color:#0e0f0f;">Prasad Shankar Huddedar </h4>           
+                      </div>
+                      
+                      <div class="clearfix"></div>
+                      <hr style="margin:5px 0 5px 0;">
+              
+                        
+          <div class="col-sm-5 col-xs-6 tital " >Name:</div><div class="col-sm-7 col-xs-6 ">{{j.Firstname}} {{j.Lastname}}</div>
+           <div class="col-sm-5 col-xs-6 tital " >Age:</div><div class="col-sm-7">{{j.Age}}</div>
+           <div class="col-sm-5 col-xs-6 tital " >Email</div><div class="col-sm-7">{{j.Email}}</div>
+           <div class="col-sm-5 col-xs-6 tital " >Gender</div><div class="col-sm-7">{{j.Gender}}</div>
+           <div class="col-sm-5 col-xs-6 tital " >Father Name</div><div class="col-sm-7">{{j.Fathername}}</div>
+           <div class="col-sm-5 col-xs-6 tital " >Contact</div><div class="col-sm-7"> {{j.Contact}}</div>
+           <div class="col-sm-5 col-xs-6 tital " >Address</div><div class="col-sm-7">{{j.Address}}</div>
+           </div>
+              </div>
+               </div>
+                  </div>
+                  </div>
+                  </div>
+                  
+                         
+                   

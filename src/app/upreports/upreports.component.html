@@ -1,0 +1,10 @@
+<div *ngFor="let i of arr2">
+    <b> NAME</b>:{{i.Firstname}} {{i.Lastname}}<br>
+     <b>Appointment date</b>:{{i.date}}<br>
+    <b>Email</b>:{{i.email}}<br>
+     <div style="margin-left: auto;" ><button (click)="uplimg(i)" >Upload Reports</button></div>
+ <div [style.display]="i.style1">
+     <input type="file" accept="image/png image/jpeg image/jpg" class="form-control" id="app1"  name="app1" (change)="preview($event)" [(ngModel)]="up">
+  <hr>
+ </div>
+ </div>

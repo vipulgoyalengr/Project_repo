@@ -1,0 +1,26 @@
+<form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">NAME OF TEST</label>
+        <input type="text" class="form-control" id="inputEmail4" name="name" placeholder="TEST NAME"[(ngModel)]="name">
+      </div>
+      <div class="form-group col-md-3">
+        <label for="inputPassword4">Price</label>
+        <input type="number" class="form-control" id="inputPassword4" name="price" placeholder="Price"[(ngModel)]="price" >
+      </div>
+      <!-- <div class="form-group col-md-6">
+        <label for="inputPassword4">Password</label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+      </div> -->
+    </div>
+    
+    <div class="form-group">
+      <label for="inputAddress2">PRE-TEST INFORMATION</label>
+      <input type="text" class="form-control" id="inputAddress2" name="ptt" placeholder="PRE-TEST INFORMATION" [(ngModel)]="ptt">
+      <label for="inputAddress1">REPORT DELIEVERY</label>
+      <input type="text" class="form-control" id="inputAddress1"  name="red" placeholder="REPORT DELIEVERY" [(ngModel)]="red">
+    </div>
+    
+    
+    <button type="submit" class="btn btn-primary" (click)="save()">SAVE</button>
+  </form>

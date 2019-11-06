@@ -1,0 +1,50 @@
+<br>
+<div class="row">
+  <div class="col-sm-6 col-md-6 col-lg-6">
+<form >
+  <input type="text" placeholder="Search.." (key.enter)="search()" name="search" [(ngModel)]="s1">
+  <button (click)="search()">search</button><br>
+  <br>
+  
+  <div *ngFor="let i of arr"><b>name</b>:{{i.Lab_name}}
+  <br>
+<b>Address</b>:{{i.Address}}
+<br>
+<b>Contact</b>:{{i.Contact}}
+</div>
+<br>
+<div *ngFor="let i of arr3"><b>Test Name</b>:{{i.Test_name}}
+  <br>
+<b>Pre Test Info</b>:{{i.Pre_test_info}}
+<br>
+<b>Report Delievery</b>:{{i.Report_delievery}}
+<br>
+<b>Price</b>:{{i.Price}}
+</div>
+</form>
+  </div>
+  <div class="vl"></div>
+  <div class="col-sm-5 col-md-5 col-lg-5" >
+    <form>
+      <input type="text" placeholder="Search.." (key.enter)="search1()" name="search1" [(ngModel)]="s2">
+      <button (click)="search1()">search</button><br>
+      <br>
+  
+  <div *ngFor="let i of arr1"><b>name</b>:{{i.Lab_name}}
+  <br>
+<b>Address</b>:{{i.Address}}
+<br>
+<b>Contact</b>:{{i.Contact}}
+</div>
+<br>
+<div *ngFor="let i of arr2"><b>Test Name</b>:{{i.Test_name}}
+  <br>
+<b>Pre Test Info</b>:{{i.Pre_test_info}}
+<br>
+<b>Report Delievery</b>:{{i.Report_delievery}}
+<br>
+<b>Price</b>:{{i.Price}}
+</div>
+    </form>
+  </div>
+</div>

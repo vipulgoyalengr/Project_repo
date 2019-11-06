@@ -1,0 +1,34 @@
+<!-- <app-navbar></app-navbar> -->
+<!-- <div *ngIf="varflag==0;">
+        <router-outlet></router-outlet> 
+    
+</div> -->
+<!-- <div *ngIf="varflag==1;"> -->
+    <!-- <app-navbar></app-navbar> -->
+    <!-- <ng-template #even>
+            <router-outlet></router-outlet>
+    </ng-template>
+   
+    <div  else even;"> -->
+     
+      <app-navbar *ngIf="tt.activate"></app-navbar>
+      <!-- <app-diaglab  *ngIf="tt.activate && tt.activate1"></app-diaglab> -->
+      <router-outlet></router-outlet>
+      <!-- <app-login *ngIf="false"> </app-login> -->
+<!-- </div> -->
+<!-- <div class="loader">   
+      <span class="box"></span>   
+      <span class="box"></span>  
+      <div class="code"> 
+      <img src="https://img1.picload.org/image/dllawagr/code.png" width="120px">
+      </div>    
+      <span class="txt">LOADING CODE...</span>
+      </div> -->
+      <div class="gooey"  *ngIf="tt.loadr">
+              <span class="dot"></span>
+              <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>

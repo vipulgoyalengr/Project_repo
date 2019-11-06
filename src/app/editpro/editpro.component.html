@@ -1,0 +1,159 @@
+<div class="body">
+    <div class="container">
+      <!---heading---->
+          <header class="heading"> Updation-Form</header><hr>
+       <!---Form starting----> 
+       <div class="row ">
+        <!--- For Name---->
+              <div class="col-sm-12">
+                  <div class="row">
+                <div class="col-xs-4">
+                          <label class="firstname">First Name </label> </div>
+                  <div class="col-xs-8">
+                      <input type="text" name="fname" id="fname" placeholder=" First Name" class="form-control "  [(ngModel)]="finame">
+                  </div>
+               </div>
+          </div>
+          
+          
+              <div class="col-sm-12">
+              <div class="row">
+                <div class="col-xs-4">
+                          <label class="lastname">Last Name </label></div>
+             <div class ="col-xs-8">	 
+                      <input type="text" name="lname" id="lname" placeholder=" Last Name" class="form-control last"  [(ngModel)]="laname">
+                     </div>
+              </div>
+          </div>
+          <!-- for age -->
+          <div class="col-xs-12">
+            <div class="row">
+              <div class="col-xs-4">
+                <label class="Age">Age</label>
+              </div>
+              <div class="col-xs-8">
+                <input type="text" name="age" id="age" placeholder="Age" class="form-control"  [(ngModel)]="age">
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="row">
+              <div class="col-xs-4">
+                <label class="Age">Contact</label>
+              </div>
+              <div class="col-xs-8">
+                <input type="tel" name="Cont" id="cont" placeholder="Cont" class="form-control"  [(ngModel)]="cont">
+              </div>
+            </div>
+          </div>
+        
+         
+          <!-----For email---->
+          
+          
+        <!-----For Password and confirm password---->
+            
+           
+            <!-- father name -->
+            <div class="col-xs-12">
+                <div class="row">
+                  <div class="col-xs-4">
+                    <label class="Fname">Father Name</label>
+                  </div>
+                  <div class="col-xs-8">
+                    <input type="text" name="fname" id="fname" placeholder="Father Name" class="form-control"  [(ngModel)]="fname">
+                  </div>
+                </div>
+              </div>
+               <!-- for address -->
+          <div class="col-sm-12">
+            <div class="row">
+            <div class="col-xs-4">
+                    <label class="address">Address </label></div>
+         <div class="col-xs-8">
+                  <input type="text" name="Add" id="Add" placeholder="Present Address" class="form-control"  [(ngModel)]="add">
+        </div>
+         </div>
+          
+          <!-- for dob -->
+          <div class="col-sm-12">
+            <div class="row">
+            <div class="col-xs-4">
+                    <label class="dob">Birth Date </label></div>
+         <div class="col-xs-8">
+                  <input type="date"  name="birthdate" id="birthdate" placeholder="date of Birth" class="form-control"  [(ngModel)]="dob">
+        </div>
+         </div>
+     </div>
+         
+         <!-- for state -->
+         <div class="col-sm-12">
+          <div class="row">
+          <div class="col-xs-4">
+                  <label class="state">State</label></div>
+       <div class="col-xs-8">
+  
+                <!-- <input type="" name="password" id="password" placeholder="Enter your Password" class="form-control"> -->
+                <select class="form-control" id="sel1" name="state" [(ngModel)]="state">
+                    <option>	Andhra Pradesh</option>
+                    <option>	Arunachal Pradesh</option>
+                    <option>Assam</option>
+                    <option>	Bihar</option>
+                    <option>	Chhattisgarh</option>
+                    <option>	Goa</option>
+                    <option>	Gujarat</option>
+                    <option>	Haryana</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Jammu and Kashmir</option>
+                    <option>	Jharkhand</option>
+                    <option>	Karnataka</option>
+                    <option>Kerala</option>
+                    <option>	Madhya Pradesh</option>
+                    <option>Maharashtra</option>
+                    <option>Manipur</option>
+                    <option>Meghalaya</option>
+                    <option>	Mizoram</option>
+                    <option>	Nagaland</option>
+                    <option>Odisha</option>
+                    <option>	Punjab</option>
+                    <option>	Rajasthan</option>
+                    <option>	Sikkim</option>
+                    <option>	Tamil Nadu</option>
+                    <option>Telangana</option>
+                    <option>	Tripura</option>
+                    <option>	Uttar Pradesh</option>
+                    <option>Uttarakhand</option>
+                    <option>	West Bengal</option>
+                  </select>
+      </div>
+       </div>
+   </div>
+   <div class="col-sm-12">
+    <div class ="row">
+            <div class="col-xs-4 ">
+        <label class="gender">Gender</label>
+    </div>
+  
+      <div class="col-xs-4 male">	 
+        <input type="radio" name="gender"  id="gender" value="boy"  [(ngModel)]="gend">Male<br>
+    </div>
+    
+    <div class="col-xs-4 female">
+        <input type="radio"  name="gender" id="gender" value="girl" >Female<br>
+      </div>
+  
+    </div>
+   
+  </div>
+  <br>
+  <div class="col-sm-12">
+  
+  
+  <button class="btn btn-warning" style="width:25%;" (click)="reg()">Update</button>
+  </div>
+  
+  
+  </div>
+  </div>
+  </div>
+  </div>

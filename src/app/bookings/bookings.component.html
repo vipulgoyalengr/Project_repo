@@ -1,0 +1,36 @@
+<!-- <div *ngFor="let i of arr2 ">
+<p><b>Name</b>:{{i.Firstname}} {{i.Lastname}} <b>Age</b>:{{i.Age}}</p>
+</div> -->
+<div class="body">
+    <div class="container"  *ngFor="let i of arr2 ">
+     <div class="panel panel-default">
+                <div class="panel-heading"> 
+                 <div class="panel-body">
+                   <div class="box box-info">
+      <div class="details">
+     
+          <div class="col-sm-5 col-xs-6 tital " >Patient Name:</div><div class="col-sm-7 col-xs-6 ">{{i.Firstname}} {{i.Lastname}}</div>
+          <div class="col-sm-5 col-xs-6 tital " >EMail Address:</div><div class="col-sm-7 col-xs-6 ">{{i.Email}}</div>
+          <div class="col-sm-5 col-xs-6 tital " >Age:</div><div class="col-sm-7 col-xs-6 ">{{i.Age}}</div>
+          <div class="col-sm-5 col-xs-6 tital " >Gender:</div><div class="col-sm-7 col-xs-6 ">{{i.Gender}}</div>
+          <div class="col-sm-5 col-xs-6 tital " >Contact</div><div class="col-sm-7 col-xs-6 ">{{i.Contact}}</div>
+          <div class="col-sm-5 col-xs-6 tital " >Appointment Date</div><div class="col-sm-7 col-xs-6 ">{{i.date}}</div>
+          <!-- <div class="col-sm-5 col-xs-6 tital " >Booking Date:</div><div class="col-sm-7 col-xs-6 ">Shreya Singh</div> -->
+          <div *ngIf="i.style1=='none' else even;">
+            <button (click)="rep(i)">See Reports</button>
+    </div>
+    <ng-template #even>
+        <button (click)="rep(i)">Hide Reports</button>
+    </ng-template>
+    <div [style.display]="i.style1"> 
+        <img [src]="upload" style="width: 600px; height: 500px;">
+    </div>
+      </div>
+     
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
